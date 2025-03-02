@@ -1,0 +1,8 @@
+player_id,name,minutes_played,goals,assists,pass_accuracy,fatigue_score,player_rating
+11,Lionel Messi,90,2,1,87.5,5.5,9.2
+12,Cristiano Ronaldo,85,1,0,80.2,6.0,8.5
+13,Kevin De Bruyne,90,0,2,92.0,5.8,8.8
+14,Neymar Jr.,88,1,1,85.0,6.2,8.0
+15,Virgil van Dijk,90,0,0,89.5,4.5,7.5
+16,Kylian Mbappe,90,3,1,78.6,7.0,9.5
+17,Erling Haaland,85,2,0,75.3,6.8,9.0
