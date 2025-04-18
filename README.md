@@ -40,7 +40,8 @@ Experiment with Deep Learning (LSTMs) for time-series predictions
 Incorporate real-time IoT sensor data for player fatigue analysis
 
 Expand system to support multiple sports (basketball, rugby, etc.)
-
+-. Injury Predictor using Data Engineering
+> COMING SOON
 Contributions & Feedback Welcome!
 let's connect! 
 
