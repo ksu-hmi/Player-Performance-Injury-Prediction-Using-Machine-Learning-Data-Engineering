@@ -38,7 +38,8 @@ Streamlit (Interactive Dashboard for User Inputs & Predictions)
 Experiment with Deep Learning (LSTMs) for time-series predictions
 
 Incorporate real-time IoT sensor data for player fatigue analysis
-
+7. Data Analytics with Jupyter and Pandas
+> COMING SOON
 Expand system to support multiple sports (basketball, rugby, etc.)
 
 Contributions & Feedback Welcome!
