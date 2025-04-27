@@ -1,47 +1,39 @@
-Player Performance & Injury Prediction Using Machine Learning & Data Engineering 
+# Player Performance & Injury Prediction Using Machine Learning & Data Engineering
 
-Overview  
-This project uses **Machine Learning & Data Engineering** to:  
-Predict player performance ratings before a match using past performance data  
-Identify players at risk of injury using biometric & workload data  
-Automate ETL Pipelines for real-time updates
-Deploy a Flask API for real-time predictions 
+## Overview  
+This project applies **Machine Learning & Data Engineering** to:  
+- Predict player performance ratings before a match using historical performance data  
+- Identify players at risk of injury using biometric and workload data  
+- Automate ETL Pipelines for real-time data updates  
+- Deploy a Flask API for serving machine learning predictions
 
-Key Features  
-Random Forest Regression Model
-- Predicts player match ratings based on:  
+## Key Features  
+**Random Forest Regression Model**
+- Predicts player match ratings based on:
   - Minutes Played
   - Goals & Assists
   - Pass Accuracy (%)
   - Fatigue Score
 
-Random Forest Classification Model
-- Predicts injury risk based on:  
-  - Sleep Hours & Hydration Levels
-  - Fatigue & Stress Index
-  - Minutes Played & Match Workload
+**Random Forest Classification Model**
+- Predicts injury risk using:
+  - Sleep Hours
+  - Hydration Levels
+  - Stress and Fatigue Index
+  - Match Workload Data
 
-Tech Stack  
-Python (Pandas, NumPy, Scikit-learn, Flask, Streamlit)
+## Tech Stack  
+- **Python** (Pandas, NumPy, Scikit-learn, Flask, Streamlit)  
+- **PostgreSQL** (Relational Database for Player Data)  
+- **Prefect** (ETL Automation for data processing)  
+- **Flask REST API** (for serving model predictions)  
+- **Streamlit Dashboard** (for visualization and user inputs)
 
-PostgreSQL (Relational Database for Player Data)
+## Future Improvements  
+- Experiment with Deep Learning models (e.g., LSTMs for time-series prediction)  
+- Incorporate real-time IoT sensor data (wearables for player fatigue analysis)  
+- Expand system to multiple sports like basketball, rugby, and more.
 
-Prefect (ETL Automation for Data Processing) 
-
-Flask REST API (For Serving ML Predictions)
-
-Streamlit (Interactive Dashboard for User Inputs & Predictions)  
-
-
-**Future Improvements**
-
-Experiment with Deep Learning (LSTMs) for time-series predictions
-
-Incorporate real-time IoT sensor data for player fatigue analysis
-
-Expand system to support multiple sports (basketball, rugby, etc.)
--. Injury Predictor using Data Engineering
-> COMING SOON
 Contributions & Feedback Welcome!
 let's connect! 
 
