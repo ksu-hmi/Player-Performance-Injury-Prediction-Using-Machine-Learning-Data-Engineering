@@ -12,19 +12,25 @@ fatigue_score = st.slider("Fatigue Score", 0, 10, 5)
 
 # Predict Button
 if st.button("Predict Player Rating"):
-    # Send Data to API
-    data = {
-        "minutes_played": minutes_played,
-        "goals": goals,
-        "assists": assists,
-        "pass_accuracy": pass_accuracy,
-        "fatigue_score": fatigue_score
-    }
-    response = requests.post("http://127.0.0.1:5000/predict", json=data)
-    result = response.json()
+    try:
+        # Send Data to API
+        data = {
+            "minutes_played": minutes_played,
+            "goals": goals,
+            "assists": assists,
+            "pass_accuracy": pass_accuracy,
+            "fatigue_score": fatigue_score
+        }
+        response = requests.post("http://127.0.0.1:5000/predict", json=data)
+        response.raise_for_status()  # Raises an HTTPError for bad responses (4xx or 5xx)
 
-    # Display Prediction
-    if "predicted_rating" in result:
-        st.success(f"Predicted Player Rating: {result['predicted_rating']}")
-    else:
-        st.error("Error in prediction")
+        result = response.json()
+
+        # Display Prediction
+        if "predicted_rating" in result:
+            st.success(f"Predicted Player Rating: {result['predicted_rating']}")
+        else:
+            st.error("Error in prediction")
+
+    except requests.exceptions.RequestException as e:
+        st.error(f"API Error: {e}")
